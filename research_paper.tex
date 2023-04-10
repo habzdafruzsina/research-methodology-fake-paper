@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Automatic improvement of the location of web elements in automated test cases with the help of an FTPK tool}
+\author{test-automation group }
+\date{April 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Software testing is an essential phase in the software development life cycle (SDLC). It helps to ensure that the software product meets the specified requirements and functions as expected. Test automation has gained considerable attention due to its potential to reduce the testing time and improve the quality of the software product. However, maintaining test scripts can be challenging, especially when the program changes. Existing tools can have costly runtime, and they can be inaccurate, and may not have the ability to handle the problem of test oracle. Therefore, there is a need for a new approach to test automation that can address these issues.
+
+Related work in this area includes WATER, WATERFALL, COLOR, ROBULA, ATA-QW, SIDEREAL, Leotta's Multi-Locator, Fuzzy-DEMATEL, Neuro-Fuzzy Logic, and AI in test automation. These approaches have various strengths and weaknesses, and they focus on different aspects of test automation.
+
+In this research paper, we propose a new approach to test automation using web element localization to make more robust test cases for GUI testing. We mainly focused on web elements, but this approach can be used also on other GUI structures, such as Android apps, or Windows desktop applications. The main idea is to relocalize web elements by their properties and tell if the change in the code was the desired, correct behaviour or not. This approach can help to stop rerunning our webelement relocalization algorithm, which produces an optimized solution. We named our tool FTPK after the researchers.
+
+The following questions will guide our research:
+
+\begin{itemize}
+\item How can we relocalize webelements by their properties?
+\item Can this approach help to reduce the cost of test automation?
+\item Can this approach improve the accuracy of test results?
+\item Can this approach solve the test oracle problem?
+\item Is this approach better, than Similo, or Dalia Alamleh's approach alone?
+\end{itemize}
+
+In the next sections of this research paper, we will describe our tool in detail, present the results of our experiments, and discuss the implications of our findings.
+
+\end{document}

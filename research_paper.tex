@@ -13,14 +13,13 @@
 
 Software testing is an essential phase in the software development life cycle (SDLC). It helps to ensure that the software product meets the specified requirements and functions as expected. Test automation has gained considerable attention due to its potential to reduce the testing time and improve the quality of the software product. However, maintaining test scripts can be challenging, especially when the program changes. Existing tools can have costly runtime, and they can be inaccurate, and may not have the ability to handle the problem of test oracle. Therefore, there is a need for a new approach to test automation that can address these issues.
 
-Related work in this area includes WATER, WATERFALL, COLOR, ROBULA, ATA-QW, SIDEREAL, Leotta's Multi-Locator, Fuzzy-DEMATEL, Neuro-Fuzzy Logic, and AI in test automation. These approaches have various strengths and weaknesses, and they focus on different aspects of test automation.
-
 In this research paper, we propose a new approach to test automation using web element localization to make more robust test cases for GUI testing. We mainly focused on web elements, but this approach can be used also on other GUI structures, such as Android apps, or Windows desktop applications. The main idea is to relocalize web elements by their properties and tell if the change in the code was the desired, correct behaviour or not. This approach can help to stop rerunning our webelement relocalization algorithm, which produces an optimized solution. We named our tool FTPK after the researchers.
 
 The following questions will guide our research:
 
 \begin{itemize}
 \item How can we relocalize webelements by their properties?
+\item How many times should the approach search?
 \item Can this approach help to reduce the cost of test automation?
 \item Can this approach improve the accuracy of test results?
 \item Can this approach solve the test oracle problem?
@@ -28,5 +27,60 @@ The following questions will guide our research:
 \end{itemize}
 
 In the next sections of this research paper, we will describe our tool in detail, present the results of our experiments, and discuss the implications of our findings.
+
+\maketitle
+
+\section{Related work}
+
+Related work in this area includes WATER, WATERFALL, COLOR, ROBULA, ATA-QW, SIDEREAL, Leotta's Multi-Locator (LML), Fuzzy-DEMATEL, Neuro-Fuzzy Logic (NFL), Dalia Alamleh's approach (DAA) and AI in test automation. These approaches have various strengths and weaknesses, and they focus on different aspects of test automation.
+
+Talk a bit about these in further details...
+
+Our solution is based on the Similo and DAA. We tried to combine them in a way to use the strength of both, and eliminate the weeknesses. Similo utilizes the triangulation of multiple locator information to identify correct GUI elements (web elements in this study). The approach is shown to be more effective at finding elements than the baseline solution and efficient enough for practical use. However, defining a suitable value for the threshold is non-trivial. If the threshold is set too high, that might eliminate valid matches, and if it is set too low, incorrect matches may be chosen due to the aforementioned synchronization challenge. So we try to esteem this value by using the DAA, which is able to tell if the code was correctly changed or not. DAA proposed a test automation which utilizes an intelligent decision-making algorithm known as fuzzy logic by using Fuzzy set theory which classifies the inputs to predict the output. This approach can predict any possible results for a combination of two inputs. According to Dalia Alamleh's results; the Fuzzy inference system seems to be a great artificial intelligent approach that can provide a test oracle for functional testing applied on web applications.
+
+\maketitle
+
+\section{Methodology}
+
+process:
+run tests
+get failed tests
+classify failed tests by the not found web elem.
+run DAA fuzzy logic to distinguish correct and incorrect code changes 
+put aside the tests for incorrect code changes -> FAILED  
+
+1st run similo on one test from each group with (correct changes)
+rerun failed tests
+
+*n
+
+show results to human
+
+
+
+\maketitle
+
+\section{Result}
+
+(robustness, performance)
+
+\maketitle
+
+\section{Discussion}
+
+
+\maketitle
+
+\section{Conclusions and future work}
+
+
+\maketitle
+
+\section{Acknowledgements}
+
+
+\maketitle
+
+\section{References}
 
 \end{document}

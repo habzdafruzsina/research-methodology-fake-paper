@@ -65,19 +65,13 @@ Our solution is based on the Similo and DAA. We tried to combine them in a way t
 
 \section{Methodology}
 
-process:
-run tests
-get failed tests
-classify failed tests by the not found web elem.
-run DAA fuzzy logic to distinguish correct and incorrect code changes 
-put aside the tests for incorrect code changes -> FAILED  
+To repair failed test scripts, our methodology involves several steps. First, we run the tests and identify the ones that failed. We then classify the failed tests based on the not found web elements. Next, we use DAA fuzzy logic to distinguish between correct and incorrect code changes that may have caused the failures.
 
-1st run similo on one test from each group with (correct changes)
-rerun failed tests
+If (according to the DAA's results) the test failed due to an incorrect code change, we put it aside and mark it as FAILED. On the other hand, if the test fails due to a correct code change, we run the Similo algorithm on one test from each group (a representative of the group). If the most similar web element (according to the Similo ranking) doesn't corrects the test script, then we try again with the second most similar, third, and so on, until we find the correct one, or we reach the given limit for tying. 
 
-*n
+After rerunning the failed tests with the optimized approach, we collect the results and show them to a human expert. The expert can analyze the results and determine if the repairs are accurate and reliable. If necessary, the expert can make further modifications to the test scripts.
 
-show results to human
+By using this methodology, we can improve the accuracy and efficiency of test automation, while also reducing the cost and effort required for maintenance. The use of fuzzy logic and algorithms can help to minimize the impact of code changes on the test scripts, ensuring that they remain reliable and effective in detecting software bugs and errors.
 
 
 

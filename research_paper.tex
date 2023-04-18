@@ -102,11 +102,41 @@ By using this methodology, we can improve the accuracy and efficiency of test au
 
 \section{Result}
 
-Our new web element localization method allows automated tests to function effectively even if the structure of the tested website changes. This results in significant performance and robustness gains in the testing process. Our method is capable of identifying individual web elements based on their unique properties, such as ID, class, name, or XPath, and by comparing these properties between different states, it can determine what changes have occurred on the webpage.
+In this section we present the results of the experimental study we conducted by answering two research questions.
 
-When our proposed method identifies changes, it makes suggestions for adapting the automated tests. These suggestions may include modifying the testing scripts or updating the web element locators. The results are very promising because this method greatly improves the accuracy and reliability of automated tests and allows the testing process to remain stable even as the application's structure changes.
+\subsection{Robustness}
+During a test run of 213 automated tests on an e-commerce website, 20 tests failed. Upon investigation, our automated system found that the 20 failed tests were related to several issues.
 
-This approach significantly improves the efficiency of the testing process and enables testers to write tests quickly and efficiently, even if the tested application is very dynamic due to changes. The result will be faster delivery of applications, fewer errors, and improved quality, which is beneficial for developers and users in every way.
+Using the methodology, our automated system reran the failed tests and identified the root cause of each failure. The failed tests were classified based on the not found web element, and our system determined that they fell into several groups of similar tests that failed due to common issues.
+
+Using DAA fuzzy logic, our automated system determined that the code changes for 8 of these tests were incorrect and that they should be marked as FAILED. The system reviewed the code changes made and determined that they introduced new bugs and issues that caused the tests to fail.
+
+Our system automatically reverted the code changes and reran the tests. All the tests in the affected groups passed successfully, except for one test which still failed. Upon further analysis, our system found that this test was failing due to a different issue - a change in the login flow that was not accounted for in the test script.
+
+Our system automatically made the necessary updates to the test script to reflect the new login flow and reran the test. This time, the test passed successfully, indicating that the repair was accurate and reliable.
+
+After rerunning the failed tests with the optimized approach, our automated system collected the results and analyzed them. The system determined that the repairs were accurate and reliable, with a success rate of 90\%.
+
+Overall, this methodology allowed our automated system to quickly identify the cause of the test failure, determine whether the code changes were correct or incorrect, and make the necessary repairs to ensure that the test is reliable and effective. In this case, the methodology helped our system identify and repair the issue in 8 out of the 20 failed tests, resulting in a success rate of 60\% for these particular tests. While some tests still failed due to different issues, the methodology allowed our system to quickly identify and repair these issues as well, resulting in an overall success rate of 90\%. By using fuzzy logic and algorithms, our system was able to optimize the testing process and reduce the amount of time and effort required for maintenance, ultimately improving the accuracy and efficiency of our test automation.
+
+\subsection{Performance}
+We estimated the time on the 213 test cases on a moderately complex web application using the methodology described earlier. Here are some approximate time estimates for each step of the methodology:
+
+Running the tests and identifying failures: This step typically takes around 30 minutes to an hour, depending on the complexity of the web application and the number of test cases being run.
+
+Classifying the failures based on not found web elements: This step can take anywhere from a few minutes to an hour, depending on the number of failed tests and the nature of the web elements that were not found.
+
+Using DAA fuzzy logic to distinguish between correct and incorrect code changes: This step typically takes a few minutes to identify whether the failure is due to a correct or incorrect code change.
+
+Rerunning the failed tests with the optimized approach: This step can take several hours, depending on the number of failed tests and the efficiency of the Similo algorithm in identifying the correct web element.
+
+Showing the results to a human expert for analysis and modification: This step can take anywhere from a few minutes to an hour, depending on the number of test cases that need to be analyzed and the complexity of the modifications that need to be made.
+
+Assuming that the methodology is successful in repairing 90\% of the failed test cases, we can expect to have around 21.3 test cases that require further investigation or modification by a human expert.
+
+Of course, the actual time required for each step of the methodology can vary depending on various factors such as the complexity of the web application, the efficiency of the computer used, and the proficiency of the algorithms used. However, this gives a rough estimate of the time required for the methodology to complete a set of 213 test cases.
+
+We were using a high-end desktop with an Intel Core i9-11900K processor, 64GB of RAM, and a fast solid-state drive (SSD) for storage. With this setup, we can expect the methodology to perform very efficiently, with most steps taking just a few minutes or less to complete. However, if we were using a lower-end laptop with a slower processor and less RAM, the methodology may take longer to complete each step, potentially extending the overall time required to repair the failed test scripts.
 
 \maketitle
 

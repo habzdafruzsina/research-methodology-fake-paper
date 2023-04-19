@@ -122,6 +122,22 @@ Overall, this methodology allowed our automated system to quickly identify the c
 \subsection{Performance}
 We estimated the time on the 213 test cases on a moderately complex web application using the methodology described earlier. Here are some approximate time estimates for each step of the methodology:
 
+\begin{center}
+\begin{tabular}{ |c|c| }
+    \hline
+    Caption & Time \\
+    \hline\hline
+    Running tests & 30-60 min \\
+    \hline
+    Classifying failures & 5-60 min \\
+    \hline
+    Run DAA algorithm & 5-10 min \\
+    \hline
+    Re-run failed tests & ~60 min \\
+    \hline
+\end{tabular}
+\end{center}
+
 Running the tests and identifying failures: This step typically takes around 30 minutes to an hour, depending on the complexity of the web application and the number of test cases being run.
 
 Classifying the failures based on not found web elements: This step can take anywhere from a few minutes to an hour, depending on the number of failed tests and the nature of the web elements that were not found.

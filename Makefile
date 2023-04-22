@@ -1,6 +1,6 @@
 pdf:
 	pdflatex research_paper.tex
-	bibtex research_paper.aux
+	biber research_paper.aux
 	pdflatex research_paper.tex
 	pdflatex research_paper.tex
 

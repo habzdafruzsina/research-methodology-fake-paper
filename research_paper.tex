@@ -1,14 +1,15 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{draftwatermark}
-\usepackage{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 \usepackage{biblatex}
+
+\addbibresource{refs.bib}
 
 \SetWatermarkText{Fictional}
 \SetWatermarkFontSize{4cm}
 \SetWatermarkScale{4.4}
-
-\addbibresource{refs.bib}
 
 \title{Automatic improvement of the location of web elements in automated test cases with the help of an FTPK tool}
 \author{test-automation group}
@@ -158,6 +159,8 @@ We were using a high-end desktop with an Intel Core i9-11900K processor, 64GB of
 
 \section{Discussion}
 
+Through our research, we have developed a merged solution by combining the capabilities of Similo\cite{similo} and DAA\cite{fuzzy_ai_in_web_testing} tools, which can effectively detect test case failures in a web application following any modifications made during development. This amalgamated solution offers an enhanced level of complexity and efficiency, making it a faster tool compared to the individual tools.
+
 - We achived the goals?
   - Pros, cons
   - Can the combination improve the performance and the effectiveness
@@ -165,11 +168,14 @@ We were using a high-end desktop with an Intel Core i9-11900K processor, 64GB of
 - Summary in past tense
   - Performance and robustness
 - Compare with the related works
-  - 
-- New reserach questions and future works
-    - Possible future improvements
-    - Machine learning
-        - Automatic learning
+
+In conclusion, the experimental study presented in this paper demonstrated the effectiveness of the proposed methodology in identifying and repairing failed automated tests on a website. By using fuzzy logic and algorithms, our automated system was able to optimize the testing process and reduce the amount of time and effort required for maintenance, ultimately improving the accuracy and efficiency of our test automation.
+
+However, there are still new research questions and possible future improvements that can be explored to further enhance the methodology. For instance, we can investigate the use of machine learning techniques to automate the learning process of our system, allowing it to become more intelligent and adaptive to changes in the web application being tested. This could potentially improve the accuracy and speed of the testing process, and reduce the need for human intervention.
+
+Additionally, future works can explore the use of other optimization algorithms and techniques that may yield better results in repairing failed tests. For example, genetic algorithms, simulated annealing, and particle swarm optimization can be used to optimize the testing process and identify the best repair strategies for each failed test case.
+
+In conclusion, the proposed methodology has shown promising results in improving the efficiency and reliability of automated testing. However, there are still several avenues for future research and improvement, and we believe that the integration of machine learning and other optimization techniques can further enhance the methodology and pave the way for more accurate and effective automated testing in the future.
 
 \maketitle
 
@@ -185,6 +191,6 @@ Finally, we would like to thank all the participants who generously gave their t
 
 \section{References}
 
-\printbibliography
+\printbibliography[title=References]
 
 \end{document}

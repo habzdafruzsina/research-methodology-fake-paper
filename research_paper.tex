@@ -29,8 +29,6 @@ Automation testing is crucial in ensuring that software applications meet the de
 
 There are several types of automation testing, including functional testing, regression testing, load testing, and performance testing. Each type of automation testing has its specific use case, and developers can choose the appropriate type of automation testing based on the application's requirements.
 
-DevOps is a software development methodology that emphasizes collaboration and integration between developers and operations teams. Automation testing plays a critical role in the DevOps methodology, as it enables developers to integrate testing into their development pipeline, facilitating the continuous delivery of software applications.
-
 In conclusion, automation testing has become an essential aspect of modern software development. Its advantages in terms of speed, accuracy, and test coverage make it a compelling alternative to manual testing. The various types of automation testing and its connection to DevOps further highlight the importance of automation testing in software development. This research paper aims to provide an in-depth analysis of automation testing and its significance in the software development life cycle.
 
 In this research paper, we propose a new approach to test automation using web element localization to make more robust test cases for GUI testing. We mainly focused on web elements, but this approach can be used also on other GUI structures, such as Android apps, or Windows desktop applications. The main idea is to relocalize web elements by their properties and tell if the change in the code was the desired, correct behaviour or not. 
@@ -161,13 +159,13 @@ We were using a high-end desktop with an Intel Core i9-11900K processor, 64GB of
 
 Through our research, we have developed a merged solution by combining the capabilities of Similo\cite{similo} and DAA\cite{fuzzy_ai_in_web_testing} tools, which can effectively detect test case failures in a web application following any modifications made during development. This amalgamated solution offers an enhanced level of complexity and efficiency, making it a faster tool compared to the individual tools.
 
-- We achived the goals?
-  - Pros, cons
-  - Can the combination improve the performance and the effectiveness
-  - Could we remove the weaknesses from the two tool (Similo, DAA)
-- Summary in past tense
-  - Performance and robustness
-- Compare with the related works
+To summarize, we effectively leveraged the strengths of both Similo\cite{similo} and DAA\cite{fuzzy_ai_in_web_testing} tools to significantly enhance the performance and efficacy of our automated test validation. As discussed in the Results section, our newly developed solution yielded even more impressive results compared to previously used solutions such as WATERFALL\cite{waterfall}, ROBULA\cite{robula}, Similo\cite{similo}, and DAA\cite{fuzzy_ai_in_web_testing}. The integration of Similo\cite{similo} and the fuzzy logic of DAA\cite{fuzzy_ai_in_web_testing} proved to be a winning combination for our project.
+
+Regrettably, the merged solution we developed is more intricate than the original tools, which means that the task of maintaining it becomes more challenging. Although the Fuzzy logic component of the DAA\cite{fuzzy_ai_in_web_testing} tool offers a more realistic and high-quality approach to automated test validation, the use of Fuzzy Inference Systems can lead to unpredictable and indeterminate results. Thus, while the new solution provides improved performance and effectiveness, its complexity and the potential for undeterministic results are factors that need to be carefully considered in future use and development.
+
+We successfully achived the goals. The performance increased to 120\% in the most cases. The classification of the found failures increased up to 200\% with the FIS solution and the accuracy of the classification increased to 160\% with the Similo\cite{similo} against the original DAA\cite{fuzzy_ai_in_web_testing}.
+
+We are pleased to report that we have accomplished our objectives with promising results. Our tests indicate a significant increase in performance, with an average improvement of 120\% in the majority of cases. The integration of Fuzzy logic through the FIS system has shown to be effective in detecting failures, leading to a classification increase of up to 200\%. Additionally, the use of Similo\cite{similo} in combination with DAA has resulted in an accuracy increase of 160\% in comparison to the original DAA\cite{fuzzy_ai_in_web_testing}. The comparison of our merged tool to existing solutions such as Similo\cite{similo} and DAA\cite{fuzzy_ai_in_web_testing} demonstrates the value of our approach.
 
 In conclusion, the experimental study presented in this paper demonstrated the effectiveness of the proposed methodology in identifying and repairing failed automated tests on a website. By using fuzzy logic and algorithms, our automated system was able to optimize the testing process and reduce the amount of time and effort required for maintenance, ultimately improving the accuracy and efficiency of our test automation.
 

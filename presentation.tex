@@ -1,0 +1,114 @@
+\documentclass{beamer}
+
+\usetheme{default}
+
+\title{Automatic improvement of the location of web elements in automated test cases with the help of an FTPK tool}
+\subtitle{}
+\author{test-automation group}
+\institute{ELTE}
+\date{April 2023}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\subsection{Automated tests}
+\begin{frame}{Automated tests}
+\begin{itemize}
+    \item improve quality
+    \item improve quality
+    \item quicker
+    \item less expensive
+    \item increased test coverage
+    \item better accuracy
+\end{itemize}
+\end{frame}
+
+\subsection{Motivation \& Approach}
+\begin{frame}{Motivation \& Approach}
+Motivation: 
+Maintaining automated test cases is time-consuming
+Test oracle problem
+
+Our approach:
+\begin{itemize}
+    \item GUI testing
+    \item more robust
+    \item relocalize the changed web element by its attributes
+    \item correct behaviour or not
+    \item adjust automated test cases
+\end{itemize}
+\end{frame}
+
+\section{Related works}
+
+\subsection{Test script repair}
+\begin{frame}{Test script repair}
+\begin{itemize}
+    \item ATER
+    \item WATERFALL
+    \item COLOR
+    \item Erratum
+    \item Similo
+\end{itemize}
+\end{frame}
+
+\subsection{Robust script generators}
+\begin{frame}{Robust script generators}
+\begin{itemize}
+    \item ROBULA
+    \item ATA-QW
+    \item SIDEREAL
+    \item Leotta's Multi-Locator (LML)
+    \item Similo
+\end{itemize}
+\end{frame}
+
+\subsection{AI based}
+\begin{frame}{AI based}
+\begin{itemize}
+    \item Fuzzy-DEMATEL
+    \item Neuro-Fuzzy Logic
+    \item Dalia Alamleh's approach
+\end{itemize}
+\end{frame}
+
+\subsection{Shortcomings}
+\begin{frame}{Shortcomings}
+handicap of Similo, DAA
+\end{frame}
+
+\section{Methodology}
+\begin{frame}{Methodology}
+\begin{itemize}
+    \item combine Similo \& Dalia Alamleh's approach
+    \item fix Similo weights by ELTE study
+    \item run tests
+    \item get failed tests
+    \item classify failed tests by the not found web elem.
+    \item run tests
+    \item run DAA fuzzy logic to distinguish correct and incorrect code changes 
+    \item put aside the tests for incorrect code changes -> FAILED
+    \item run Similo on one test from each group with (correct changes)
+    \item rerun failed tests
+    \item show results to human
+\end{itemize}
+\end{frame}
+
+\section{Results}
+\begin{frame}{Results}
+\end{frame}
+
+\section{Discussion}
+\begin{frame}{Discussion}
+\end{frame}
+
+\end{document}

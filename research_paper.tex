@@ -20,6 +20,18 @@
 
 \maketitle
 
+\section{Abstract}
+
+Automated testing has become an essential part of software development, helping to ensure the quality and reliability of software products. However, maintaining automated test cases can be a time-consuming and error-prone process. In this research, we present a new tool that helps to correct automated test cases by combining the strengths of two existing tools, Similo and DAA.
+
+Similo is a tool that improves locator robustness by collecting locator parameters from all visible web elements, using neighboring web element information, and allowing all locator parameters to be compared, weighted, and tallied into a combined similarity score for each web element. It enables using a threshold value to filter how similar candidate web elements have to be considered a match, which is not provided by other approaches. On the other hand, DAA uses Fuzzy Inference System with Fuzzy logic to improve the determination of the web cases and create correct decisions. By using Fuzzy logic, DAA is able to create a more realistic and quality test validation process. However, FIS could cause undeterministic results.
+
+By merging these two tools, we aim to bring together their advantages and provide a more effective solution for correcting automated test cases. Our experimental results show that the performance of our new tool increased by 120\% in most cases, and the classification of the found failures increased up to 200\% with the FIS solution, while the accuracy of the classification increased to 160\% with the Similo against the original DAA.
+
+In conclusion, our new tool provides a promising solution for correcting automated test cases, which can help to reduce the time and effort required for maintaining these cases.
+
+\maketitle
+
 \section{Introduction}
 
 Software testing is an essential phase in the software development life cycle (SDLC). It helps to ensure that the software product meets the specified requirements and functions as expected. Test automation has gained considerable attention due to its potential to reduce the testing time and improve the quality of the software product. However, maintaining test scripts can be challenging, especially when the program changes\cite{gui_testing, gui_test_costs}. Existing tools can have costly runtime, and they can be inaccurate, and may not have the ability to handle the problem of test oracle\cite{test_oracle_ai}. Therefore, there is a need for a new approach to test automation that can address these issues.

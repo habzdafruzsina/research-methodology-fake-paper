@@ -6,6 +6,8 @@ pdf:
 
 clean:
 	rm ./research_paper.aux
+	rm ./research_paper.aux.bbl
+	rm ./research_paper.aux.blg
 	rm ./research_paper.log
 	rm ./research_paper.pdf
 	rm ./research_paper.bcf

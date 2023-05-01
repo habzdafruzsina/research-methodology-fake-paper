@@ -1,8 +1,8 @@
 pdf:
-	pdflatex research_paper.tex
-	biber research_paper.aux
-	pdflatex research_paper.tex
-	pdflatex research_paper.tex
+	pdflatex research_paper
+	biber research_paper
+	pdflatex research_paper
+	pdflatex research_paper
 
 clean:
 	rm ./research_paper.aux

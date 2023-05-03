@@ -13,6 +13,18 @@
     - Revolut
     - Some universities (beyond ELTE)
       - Professors and PHD students
+      - Examples
+        - ELTE
+        - AI
+          - University of Amsterdam
+          - Technical University of Berlin
+          - ETH Zurich
+          - Charles University, Czech Republic
+        - Web technology
+          - Technical University of Munich
+          - University of Manchester
+          - University of Warsaw
+          - University of Zagreb
     - Other organizations
     - Name, Short name, Country, Project entry month, project exit month
   - Budget Breakdown

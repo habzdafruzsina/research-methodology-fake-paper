@@ -25,7 +25,11 @@
           - University of Manchester
           - University of Warsaw
           - University of Zagreb
-    - Other organizations
+    - Other organizations/companies
+      - What can we offer what is good for the companies?
+      - What can they give back to us, what helps to improve/build our solution
+      - F.e.: They provide different kind of web applications. They will get better (more tested) result.
+      - F.e. 2: Universities provide researchers, they can get research "idea"
     - Name, Short name, Country, Project entry month, project exit month
   - Budget Breakdown
     - For each participiants

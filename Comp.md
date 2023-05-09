@@ -3,17 +3,24 @@
 ## ToDos
 
 - Fill out the project template
+  - Cover
+    - th Framework, theme, id 
+    - Project full title
+  - Table of Contents
   - Find a project
-    - Project title (maximum 200 characters), acronym (maximum 20 characters)
+    - Project title (maximum 200 characters), acronym (maximum 20 characters), Project Number
     - Summary
       - Abstract (maximum 1 page)
       - Starting date
       - Duration (in months)
-  - Participants
-    - Revolut
-    - Some universities (beyond ELTE)
-      - Professors and PHD students
-      - Examples
+  - Participants (Beneficiaries)
+    - Companys to test our results
+       - Brainhub
+       - Fjord
+       - Dinarys
+       - Bright Interactive
+       - Some universities (beyond ELTE)
+     - Professors and PHD students
         - ELTE
         - AI
           - University of Amsterdam
@@ -33,12 +40,34 @@
     - Name, Short name, Country, Project entry month, project exit month
   - Budget Breakdown
     - For each participiants
+    - 
   - Workplan
     - Work packages
+      - WP number
+      - WP title
+      - Type of activity
+      - Lead beneficiary number
+      - person months
+      - start month
+      - end month
     - Deliverable
+      - number
+      - title
+      - WP number
+      - Lead beneficiary number
+      - person months
+      - nature (R = Report, P = Prototype, D = Demonstrator, O = Other)
+      - delivery date
     - Milestones
+      - number
+      - name
+      - WP number
+      - Lead beneficiary number
+      - Delivery date from Annex X
+    - Man-months per Beneficiary per Work Package
+    - Man-months per Activity per Beneficiary (RTD/Innovation activities, Demonstration activities, Consortium Management activities, other)
     - Project reviews
-    - Project efforts
+    - Project efforts and costs
   - Project description (some sentences for each)
     - Scientific and tech quality
     - Implementation

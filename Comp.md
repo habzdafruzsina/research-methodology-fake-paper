@@ -4,7 +4,7 @@
 
 - Fill out the project template
   - Cover
-    - th Framework, theme, id 
+    - th Framework, theme, id
     - Project full title
   - Table of Contents
   - Find a project
@@ -15,23 +15,23 @@
       - Duration (in months)
   - Participants (Beneficiaries)
     - Companys to test our results
-       - Brainhub
-       - Fjord
-       - Dinarys
-       - Bright Interactive
-       - Some universities (beyond ELTE)
-     - Professors and PHD students
-        - ELTE
-        - AI
-          - University of Amsterdam
-          - Technical University of Berlin
-          - ETH Zurich
-          - Charles University, Czech Republic
-        - Web technology
-          - Technical University of Munich
-          - University of Manchester
-          - University of Warsaw
-          - University of Zagreb
+      - Brainhub
+      - Fjord
+      - Dinarys
+      - Bright Interactive
+      - Some universities (beyond ELTE)
+    - Professors and PHD students
+      - ELTE
+      - AI
+        - University of Amsterdam
+        - Technical University of Berlin
+        - ETH Zurich
+        - Charles University, Czech Republic
+      - Web technology
+        - Technical University of Munich
+        - University of Manchester
+        - University of Warsaw
+        - University of Zagreb
     - Other organizations/companies
       - What can we offer what is good for the companies?
       - What can they give back to us, what helps to improve/build our solution
@@ -40,7 +40,6 @@
     - Name, Short name, Country, Project entry month, project exit month
   - Budget Breakdown
     - For each participiants
-    - 
   - Workplan
     - Work packages
       - WP number

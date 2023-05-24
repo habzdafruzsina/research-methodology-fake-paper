@@ -27,12 +27,13 @@
 
 | ProjectS                                                    | Bezzegh Kristof (%) | Habzda Fruzsina (%) | Karcag Tamas (%) |
 | ----------------------------------------------------------- | ------------------- | ------------------- | ---------------- |
+| Planning                                                    | 33.33               | 33.33               | 33.33            |
 | Project Summary                                             | -                   | -                   | 100              |
 | Participants                                                | 20                  | 40                  | 40               |
 | Budget Breakdown                                            | -                   | 100                 | -                |
 | List of WPs                                                 | 33.33               | 33.33               | 33.33            |
 | List of Deliverables                                        | -                   | 50                  | 50               |
-| WP1 Description                                             | -                   | 100                 | -                |
+| WP1 Description                                             | -                   | 85                  | 15               |
 | WP2 Description                                             | -                   | -                   | 100              |
 | WP3 Description                                             | -                   | 100                 | -                |
 | WP4 Description                                             | -                   | -                   | 100              |
@@ -40,21 +41,22 @@
 | WP6 Description                                             | -                   | -                   | 100              |
 | WP7 Description                                             | -                   | 100                 | -                |
 | WP8 Description                                             | -                   | 100                 | -                |
-| WP9 Description                                             | -                   | -                   | 100              |
+| WP9 Description                                             | 100                 | -                   | -                |
 | List of Milestones                                          | -                   | -                   | 100              |
 | Gantt chart                                                 | -                   | -                   | 100              |
 | Project Reviews                                             | -                   | 100                 | -                |
 | Project Efforts                                             | -                   | 100                 | -                |
 | Concept and Objectives                                      | -                   | 100                 | -                |
 | Progress Beyon the State-of-the-arts                        | -                   | 100                 | -                |
-| Success Criteria and Res. Indicators                        | -                   | -                   | -                |
-| S/T Methology                                               | -                   | -                   | -                |
+| Success Criteria and Res. Indicators                        | 100                 | -                   | -                |
+| S/T Methology                                               | -                   | -                   | 100              |
 | Management Structure and Procedures                         | -                   | 100                 | -                |
 | Beneficiaries                                               | -                   | 100                 | -                |
 | Consortium as a Whole                                       | -                   | 100                 | -                |
-| Resources to be committed                                   | -                   | -                   | -                |
+| Resources to be committed                                   | 100                 | -                   | -                |
 | Strategic Impact                                            | -                   | 100                 | -                |
 | Plans for the Use and Dissemnination of Forground Knowledge | -                   | 100                 | -                |
-| Summary                                                     | -                   | -                   | -                |
+| Overall Review and Fixes                                    | 33.33               | 33.33               | 33.33            |
+| Summary                                                     | 14                  | 55.83               | 30.13            |
 
 > The collaboriation table does not contain information about the task weights, the meetings and the other works.
